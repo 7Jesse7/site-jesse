@@ -1,0 +1,224 @@
+/* estilos.css - Estilização com tons de verde */
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #E8F5E9; /* Verde claro */
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #2E7D32; /* Verde escuro */
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+  width: 100%;
+}
+
+/* Menu de navegação */
+nav {
+  background-color: #388E3C; /* Verde médio */
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #1B5E20; /* Verde mais escuro */
+}
+
+/* Container de conteúdo */
+.container {
+  width: 80%;
+  max-width: 1000px;
+  background-color: #fff;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0px 0px 10px #888;
+  border-radius: 4px;
+  position: relative;
+}
+
+/* Ajuste do layout sobre mim */
+.sobre-mim-wrapper {
+  display: flex;
+  align-items: flex-start; /* Alinha o topo da imagem com o texto */
+  justify-content: flex-start;
+  gap: 20px; /* Espaço entre os dois blocos */
+}
+
+/* Novo quadrado separado para a imagem */
+.foto-container {
+  width: 200px; /* Tamanho do bloco da imagem */
+  height: 220px; /* Ajuste da altura conforme necessário */
+  background-color: #C8E6C9; /* Verde claro para destacar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2); /* Sombra para efeito visual */
+}
+
+/* Ajuste da imagem dentro do novo quadrado */
+.foto-container img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Ajuste do layout para formação educacional */
+.formacao-wrapper {
+  display: flex;
+  align-items: flex-start; /* Alinha os textos ao topo */
+  justify-content: flex-start;
+  gap: 30px; /* Espaço entre a imagem e o texto */
+  margin-bottom: 20px; /* Espaço entre cada bloco de formação */
+}
+
+/* Novo quadrado separado para imagens das formações */
+.foto-formacao-container {
+  width: 200px; /* Tamanho do bloco da imagem */
+  height: auto;
+  background-color: #C8E6C9; /* Verde claro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+/* Ajuste da imagem dentro do quadrado separado */
+.foto-formacao-container img {
+  width: 180px;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+/* Ajuste do layout para portfólio */
+.portfolio-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+/* Quadrado separado para imagens */
+.foto-portfolio-container {
+  width: 200px;
+  height: auto;
+  background-color: #C8E6C9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+/* Ajuste da imagem dentro do bloco separado */
+.foto-portfolio-container img {
+  width: 180px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Botões clicáveis */
+.portfolio-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #388E3C;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+  text-align: center;
+}
+
+.portfolio-button:hover {
+  background-color: #1B5E20;
+}
+
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #2E7D32;
+  color: #fff;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Estilização de formulários */
+form {
+  margin-top: 20px;
+}
+
+form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+form input[type="submit"] {
+  background-color: #388E3C;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+form input[type="submit"]:hover {
+  background-color: #1B5E20;
+}
