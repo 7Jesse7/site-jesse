@@ -3,6 +3,10 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="manifest" href="manifest.json">
+   <meta name="theme-color" content="#0078d7">
+   <meta name="apple-mobile-web-app-capable" content="yes">
+   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">  
    <title>Sobre Mim</title>
    <link rel="stylesheet" href="estilos.css">
 </head>
@@ -50,5 +54,12 @@
    <footer>
        <p>© 2025 Meu Site Pessoal. Todos os direitos reservados.</p>
    </footer>
+   <script>
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("service-worker.js")
+            .then(() => console.log("Service Worker registrado com sucesso"))
+            .catch(error => console.log("Falha ao registrar Service Worker:", error));
+        }
+   </script>
 </body>
 </html>

@@ -222,3 +222,35 @@ form input[type="submit"] {
 form input[type="submit"]:hover {
   background-color: #1B5E20;
 }
+
+@media (max-width: 600px) {
+  .sobre-mim-wrapper,
+  .formacao-wrapper,
+  .portfolio-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .foto-container,
+  .foto-formacao-container,
+  .foto-portfolio-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 5px 0;
+  }
+
+  nav ul li a {
+    padding: 10px;
+    width: 100%;
+    display: block;
+  }
+}
